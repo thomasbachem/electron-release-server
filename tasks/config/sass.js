@@ -5,6 +5,14 @@ module.exports = function(grunt) {
       options: {
         implementation: require('sass'),
         // style: 'compressed',
+        silenceDeprecations: [
+          'legacy-js-api',
+          'import',
+          'global-builtin',
+          'color-functions',
+          'slash-div',
+          'mixed-decls'
+        ]
       },
       files: [{
         expand: true,
